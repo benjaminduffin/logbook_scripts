@@ -11,4 +11,6 @@ plot(x,y)
 x <- data.frame(grp = rep(letters[1:10], 2), value = rep(1:10, 2))
 
 ggplot(x) + 
-geom_bar(aes(x = grp, y = value))
+geom_bar(aes(x = value)) # fixed the error here for you 
+
+hist(x$value)
